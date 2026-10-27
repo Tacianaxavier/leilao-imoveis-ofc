@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Leilão Oficial de Imóveis: Casas e apartamentos com até 60% de desconto. Assessoria jurídica completa e atendimento direto no WhatsApp +55 11 96018-9568.">
+  <meta property="og:title" content="Leilão Imóveis | Oportunidades Oficiais até 60% OFF">
+  <meta property="og:description" content="Casas e apartamentos com condições exclusivas de leilão. Fale com nosso plantão de atendimento no WhatsApp (11) 96018-9568.">
+  <meta property="og:image" content="./perfil-leilao.png">
+  <meta property="og:type" content="website">
+  <title>Leilão Imóveis | Oportunidades com até 60% de Desconto</title>
+  
+  <link rel="icon" type="image/png" href="./perfil-leilao.png">
+  <link rel="apple-touch-icon" href="./perfil-leilao.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0d9488;
+      --primary-dark: #0f766e;
+      --primary-light: #2dd4bf;
+      --coral: #f97316;
+      --coral-dark: #ea580c;
+      --gold: #f59e0b;
+      --gold-light: #fef3c7;
+      --navy: #0f172a;
+      --navy-card: #1e293b;
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-200: #e2e8f0;
+      --slate-300: #cbd5e1;
+      --slate-600: #475569;
+      --slate-800: #1e293b;
+      --slate-900: #0f172a;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --whatsapp: #25d366;
+      --whatsapp-dark: #128c7e;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+      --shadow-lg: 0 20px 35px -5px rgba(15, 23, 42, 0.12), 0 10px 15px -5px rgba(15, 23, 42, 0.06);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text-main);
+      background-color: var(--slate-50);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: -0.03em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: min(1200px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    /* Top Urgency / Info Bar */
+    .top-announcement {
+      background: linear-gradient(90deg, #090d16 0%, #1e293b 100%);
+      color: #e2e8f0;
+      font-size: 0.8rem;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .announcement-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .live-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+    }
+
+    .pulse-dot {
+      width: 9px;
+      height: 9px;
+      background-color: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+      animation: pulseGreen 1.8s infinite;
+    }
+
+    @keyframes pulseGreen {
+      0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+      70% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+    }
+
+    .top-contact-info {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .phone-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #38bdf8;
+      font-weight: 700;
+      transition: color 0.2s;
+    }
+
+    .phone-pill:hover {
+      color: #7dd3fc;
+    }
+
+    /* Main Header / Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--slate-200);
+      transition: box-shadow 0.2s;
+    }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 78px;
+      gap: 20px;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+      border: 2px solid var(--primary-light);
+      flex-shrink: 0;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .brand-group:hover .brand-avatar {
+      transform: scale(1.08) rotate(3deg);
+    }
+
+    .brand-logo-img {
+      height: 44px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--slate-600);
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover {
+      color: var(--primary-dark);
+    }
+
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: linear-gradient(135deg, #16a34a, #15803d);
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 700;
+      box-shadow: 0 4px 14px rgba(22, 163, 74, 0.25);
+      transition: all 0.25s ease;
+      flex-shrink: 0;
+    }
+
+    .header-cta:hover {
+      background: linear-gradient(135deg, #15803d, #166534);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(22, 163, 74, 0.35);
+    }
+
+    .whatsapp-icon-svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background: radial-gradient(circle at 85% 20%, rgba(45, 212, 191, 0.12) 0%, transparent 50%),
+                  radial-gradient(circle at 10% 80%, rgba(249, 115, 22, 0.08) 0%, transparent 40%),
+                  #ffffff;
+      padding: 60px 0 50px;
+      border-bottom: 1px solid var(--slate-200);
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.95fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(13, 148, 136, 0.1);
+      border: 1px solid rgba(13, 148, 136, 0.25);
+      color: var(--primary-dark);
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 18px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.3rem, 4.4vw, 3.6rem);
+      font-weight: 850;
+      line-height: 1.1;
+      color: var(--slate-900);
+      margin-bottom: 18px;
+    }
+
+    .hero-title .highlight {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, #0d9488 50%, var(--coral) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      color: var(--slate-600);
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #fff;
+      padding: 15px 28px;
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      font-weight: 800;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
+      background: linear-gradient(135deg, #20ba5a, #0e7266);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #fff;
+      color: var(--slate-800);
+      border: 1px solid var(--slate-300);
+      padding: 14px 24px;
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      font-weight: 700;
+      transition: all 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: var(--slate-100);
+      border-color: var(--slate-400);
+    }
+
+    .hero-trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-top: 22px;
+      border-top: 1px solid var(--slate-200);
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--slate-600);
+    }
+
+    .trust-icon {
+      color: var(--primary);
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+
+    /* Hero Profile Showcase Card */
+    .hero-profile-card {
+      background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      color: #fff;
+      box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-profile-card::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, rgba(45, 212, 191, 0.2) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .profile-card-header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .profile-card-avatar-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .profile-card-avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      border: 3px solid #f59e0b;
+      box-shadow: 0 0 20px rgba(245, 158, 11, 0.35);
+      background: #0f172a;
+    }
+
+    .profile-online-badge {
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+      background: #22c55e;
+      border: 2px solid #0f172a;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+    }
+
+    .profile-name {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .verified-icon {
+      color: #38bdf8;
+      width: 18px;
+      height: 18px;
+    }
+
+    .profile-role {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      font-weight: 500;
+    }
+
+    .profile-phone-box {
+      margin-top: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.95rem;
+      font-weight: 750;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    .profile-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      margin-bottom: 22px;
+      text-align: center;
+    }
+
+    .metric-item .val {
+      display: block;
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #34d399;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .metric-item .lbl {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .profile-card-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: #25d366;
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 0.92rem;
+      padding: 13px 20px;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s;
+    }
+
+    .profile-card-cta:hover {
+      background: #1eb857;
+      transform: translateY(-2px);
+    }
+
+    /* Search & Filter Bar */
+    .filter-section {
+      padding: 24px 0 10px;
+      background: var(--slate-50);
+    }
+
+    .filter-card {
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .filter-title-group h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--slate-900);
+    }
+
+    .filter-title-group p {
+      font-size: 0.82rem;
+      color: var(--slate-600);
+    }
+
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .filter-btn {
+      border: 1px solid var(--slate-200);
+      background: var(--slate-50);
+      color: var(--slate-600);
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--primary-dark);
+      color: #fff;
+      border-color: var(--primary-dark);
+    }
+
+    /* Listings Section */
+    .listings-section {
+      padding: 40px 0 70px;
+      background: var(--slate-50);
+    }
+
+    .section-header {
+      margin-bottom: 36px;
+      text-align: center;
+    }
+
+    .section-eyebrow {
+      color: var(--primary-dark);
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 850;
+      color: var(--slate-900);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      max-width: 680px;
+      margin: 0 auto;
+      color: var(--slate-600);
+      font-size: 0.98rem;
+    }
+
+    .property-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--slate-200);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary-light);
+    }
+
+    .card-photo-wrap {
+      position: relative;
+      height: 220px;
+      background: #e2e8f0;
+      overflow: hidden;
+    }
+
+    .card-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover .card-photo-wrap img {
+      transform: scale(1.07);
+    }
+
+    .badge-discount {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: linear-gradient(135deg, #f97316, #ea580c);
+      color: #fff;
+      font-size: 0.76rem;
+      font-weight: 850;
+      padding: 6px 10px;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(234, 88, 12, 0.35);
+      letter-spacing: 0.02em;
+    }
+
+    .badge-tag-lot {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(4px);
+      color: #38bdf8;
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 5px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.05em;
+    }
+
+    .photo-floating-wa {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #25d366;
+      border: 2px solid #fff;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+    }
+
+    .card:hover .photo-floating-wa {
+      transform: scale(1.1);
+    }
+
+    .card-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-location {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: var(--slate-900);
+      margin-bottom: 6px;
+      min-height: 44px;
+    }
+
+    .card-address {
+      font-size: 0.78rem;
+      color: var(--slate-600);
+      margin-bottom: 14px;
+      min-height: 36px;
+    }
+
+    .card-specs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-top: 1px dashed var(--slate-200);
+      border-bottom: 1px dashed var(--slate-200);
+      margin-bottom: 14px;
+      font-size: 0.76rem;
+      color: var(--slate-600);
+      font-weight: 600;
+    }
+
+    .card-price-block {
+      margin-bottom: 16px;
+    }
+
+    .price-original {
+      font-size: 0.76rem;
+      color: var(--slate-600);
+    }
+
+    .price-original s {
+      color: #94a3b8;
+    }
+
+    .price-auction {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--primary-dark);
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-top: 3px;
+    }
+
+    .price-savings {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 750;
+      color: #15803d;
+      background: #dcfce7;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-top: 4px;
+    }
+
+    .card-actions {
+      margin-top: auto;
+      display: grid;
+      gap: 8px;
+    }
+
+    .btn-card-wa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #25d366;
+      color: #ffffff;
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.84rem;
+      font-weight: 800;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-card-wa:hover {
+      background: #1eb857;
+      transform: translateY(-1px);
+    }
+
+    .btn-card-detail {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--slate-50);
+      color: var(--slate-800);
+      border: 1px solid var(--slate-200);
+      padding: 9px;
+      border-radius: var(--radius-sm);
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-card-detail:hover {
+      background: var(--slate-200);
+    }
+
+    /* Notice banner */
+    .legal-notice {
+      margin-top: 36px;
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      border-left: 4px solid var(--coral);
+      padding: 18px 22px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      color: var(--slate-600);
+      line-height: 1.6;
+    }
+
+    /* Calculator & ROI Simulator */
+    .calculator-section {
+      padding: 60px 0;
+      background: linear-gradient(180deg, var(--slate-50) 0%, #ffffff 100%);
+      border-top: 1px solid var(--slate-200);
+      border-bottom: 1px solid var(--slate-200);
+    }
+
+    .calc-card {
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      padding: 36px clamp(20px, 4vw, 44px);
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .calc-inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .calc-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--slate-800);
+      margin-bottom: 8px;
+    }
+
+    .calc-range-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .calc-range-wrap input[type="range"] {
+      flex: 1;
+      height: 8px;
+      accent-color: var(--primary);
+      cursor: pointer;
+    }
+
+    .calc-range-val {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      min-width: 130px;
+      text-align: right;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .calc-results {
+      background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      color: #fff;
+    }
+
+    .calc-result-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.88rem;
+    }
+
+    .calc-result-row.highlight {
+      border-bottom: none;
+      padding-top: 18px;
+    }
+
+    .calc-result-row.highlight .val {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: #34d399;
+    }
+
+    .btn-calc-wa {
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background: #25d366;
+      color: #0f172a;
+      padding: 13px;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-weight: 800;
+      transition: background 0.2s;
+    }
+
+    .btn-calc-wa:hover {
+      background: #1eb857;
+    }
+
+    /* Process Steps */
+    .steps-section {
+      padding: 70px 0;
+      background: #ffffff;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .step-card {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 26px 20px;
+      position: relative;
+      transition: all 0.25s;
+    }
+
+    .step-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+
+    .step-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 900;
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .step-card h3 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 8px;
+    }
+
+    .step-card p {
+      font-size: 0.85rem;
+      color: var(--slate-600);
+      line-height: 1.6;
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 70px 0;
+      background: var(--slate-50);
+    }
+
+    .about-card {
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      box-shadow: var(--shadow-sm);
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-text h2 {
+      font-size: 2.1rem;
+      font-weight: 850;
+      color: var(--slate-900);
+      margin-bottom: 16px;
+    }
+
+    .about-text p {
+      font-size: 0.95rem;
+      color: var(--slate-600);
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .about-badge-card {
+      background: linear-gradient(145deg, #0f172a, #1e293b);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      color: #fff;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .about-badge-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      border: 3px solid #f59e0b;
+    }
+
+    .about-badge-card h3 {
+      font-size: 1.3rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .about-badge-card .tag {
+      color: #38bdf8;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .about-badge-card .phone {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #34d399;
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      padding: 70px 0;
+      background: #ffffff;
+      border-top: 1px solid var(--slate-200);
+    }
+
+    .faq-grid {
+      max-width: 840px;
+      margin: 36px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      background: var(--slate-50);
+      transition: border-color 0.2s;
+    }
+
+    .faq-item:hover {
+      border-color: var(--primary);
+    }
+
+    .faq-question {
+      padding: 18px 22px;
+      font-weight: 750;
+      font-size: 0.98rem;
+      color: var(--slate-900);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    .faq-answer {
+      padding: 0 22px 18px;
+      font-size: 0.88rem;
+      color: var(--slate-600);
+      line-height: 1.7;
+    }
+
+    /* Footer */
+    footer {
+      background: #090d16;
+      color: #94a3b8;
+      padding: 50px 0 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.85rem;
+    }
+
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .footer-brand img.avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+    }
+
+    .footer-wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #25d366;
+      color: #0f172a;
+      padding: 10px 18px;
+      border-radius: var(--radius-sm);
+      font-weight: 800;
+      font-size: 0.88rem;
+      transition: background 0.2s;
+    }
+
+    .footer-wa-btn:hover {
+      background: #1eb857;
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.78rem;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-wa-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #25d366;
+      color: #ffffff;
+      padding: 12px 20px 12px 14px;
+      border-radius: 40px;
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+      font-weight: 800;
+      font-size: 0.9rem;
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s;
+      animation: floatBtn 3s ease-in-out infinite;
+    }
+
+    .floating-wa-btn:hover {
+      transform: scale(1.06) translateY(-3px);
+      box-shadow: 0 14px 38px rgba(37, 211, 102, 0.6);
+      color: #fff;
+    }
+
+    .floating-wa-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      object-fit: cover;
+    }
+
+    @keyframes floatBtn {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    /* Property Detail Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(6px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-content {
+      background: #ffffff;
+      width: min(680px, 100%);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+      animation: modalSlide 0.25s ease-out;
+    }
+
+    @keyframes modalSlide {
+      from { opacity: 0; transform: translateY(20px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 10;
+      background: rgba(15, 23, 42, 0.7);
+      color: #fff;
+      border: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: background 0.2s;
+    }
+
+    .modal-close-btn:hover {
+      background: #000;
+    }
+
+    .modal-photo {
+      height: 280px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .modal-body {
+      padding: 26px;
+    }
+
+    .modal-tags {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .modal-title {
+      font-size: 1.45rem;
+      font-weight: 850;
+      color: var(--slate-900);
+      margin-bottom: 6px;
+    }
+
+    .modal-address {
+      font-size: 0.88rem;
+      color: var(--slate-600);
+      margin-bottom: 18px;
+    }
+
+    .modal-price-box {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-specs-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 24px;
+      font-size: 0.85rem;
+    }
+
+    .modal-spec-item {
+      background: var(--slate-100);
+      padding: 10px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      font-weight: 700;
+      color: var(--slate-800);
+    }
+
+    .modal-wa-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: #25d366;
+      color: #ffffff;
+      padding: 15px;
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      font-weight: 800;
+      transition: background 0.2s;
+    }
+
+    .modal-wa-cta:hover {
+      background: #1eb857;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .property-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .calc-card {
+        grid-template-columns: 1fr;
+      }
+      .about-card {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+      .hero {
+        padding: 40px 0 35px;
+      }
+      .property-grid {
+        grid-template-columns: 1fr;
+      }
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .hero-actions .btn-primary, .hero-actions .btn-secondary {
+        width: 100%;
+      }
+      .top-announcement {
+        text-align: center;
+      }
+      .announcement-inner {
+        justify-content: center;
+      }
+      .floating-wa-btn span {
+        display: none;
+      }
+      .floating-wa-btn {
+        padding: 10px;
+        border-radius: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Urgency / Info Bar -->
+  <aside class="top-announcement" aria-label="Informações de plantão">
+    <div class="container announcement-inner">
+      <div class="live-status">
+        <span class="pulse-dot"></span>
+        <span>Plantão Oficial de Leilão Ativo · 1ª e 2ª Praças Abertas</span>
+      </div>
+      <div class="top-contact-info">
+        <span>Atendimento Direto:</span>
+        <a class="phone-pill" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20as%20oportunidades%20de%20leil%C3%A3o%20de%20im%C3%B3veis." target="_blank" rel="noopener noreferrer">
+          <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+          +55 (11) 96018-9568
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a class="brand-group" href="#inicio" aria-label="Leilão Imóveis - Início">
+        <img class="brand-avatar" src="./perfil-leilao.png" alt="Perfil Oficial Leilão Imóveis" width="48" height="48">
+        <img class="brand-logo-img" src="./Logo.png" alt="Leilão Imóveis - Marca Oficial" width="180" height="45">
+      </a>
+
+      <nav class="nav-menu" aria-label="Navegação principal">
+        <a class="nav-link" href="#imoveis">Imóveis em Destaque</a>
+        <a class="nav-link" href="#simulador">Simulador ROI</a>
+        <a class="nav-link" href="#como-funciona">Como Funciona</a>
+        <a class="nav-link" href="#sobre">Sobre Nós</a>
+        <a class="nav-link" href="#faq">Perguntas Frequentes</a>
+      </nav>
+
+      <a class="header-cta" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20as%20casas%20e%20im%C3%B3veis%20em%20leil%C3%A3o." target="_blank" rel="noopener noreferrer">
+        <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span>⚖️ Oportunidades Oficiais Homologadas</span>
+          </div>
+          <h1 class="hero-title">
+            Arremate imóveis com até <span class="highlight">60% de Desconto</span> e assessoria jurídica.
+          </h1>
+          <p class="hero-description">
+            Casas e apartamentos selecionados com valores abaixo da avaliação de mercado. Consulte as condições de arrematação diretamente com nossa equipe credenciada pelo WhatsApp.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn-primary" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20consultar%20os%20im%C3%B3veis%20em%20leil%C3%A3o." target="_blank" rel="noopener noreferrer">
+              <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+              Consultar Oportunidades (+55 11 96018-9568)
+            </a>
+            <a class="btn-secondary" href="#imoveis">
+              Ver Imóveis Disponíveis ↓
+            </a>
+          </div>
+
+          <div class="hero-trust-row">
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>Homologação e Escritura</span>
+            </div>
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>Possibilidade de Financiamento/FGTS</span>
+            </div>
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>Suporte até a Entrega das Chaves</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Profile Showcase Card -->
+        <div class="hero-profile-card">
+          <div class="profile-card-header">
+            <div class="profile-card-avatar-wrap">
+              <img class="profile-card-avatar" src="./perfil-leilao.png" alt="Foto de Perfil Oficial Leilão Imóveis" width="88" height="88">
+              <span class="profile-online-badge" title="Equipe Online no WhatsApp"></span>
+            </div>
+            <div>
+              <h2 class="profile-name">
+                Leilão Imóveis
+                <svg class="verified-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              </h2>
+              <p class="profile-role">Portal Oficial de Oportunidades & Arrematações</p>
+              <div class="profile-phone-box">
+                <span>WhatsApp: +55 11 96018-9568</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-metrics">
+            <div class="metric-item">
+              <span class="val">60%</span>
+              <span class="lbl">Desconto Médio</span>
+            </div>
+            <div class="metric-item">
+              <span class="val">+450</span>
+              <span class="lbl">Lotes Analisados</span>
+            </div>
+            <div class="metric-item">
+              <span class="val">100%</span>
+              <span class="lbl">Segurança Jurídica</span>
+            </div>
+          </div>
+
+          <a class="profile-card-cta" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20estou%20vendo%20o%20perfil%20do%20Leil%C3%A3o%20Im%C3%B3veis%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer">
+            <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+            Iniciar Conversa com o Plantão
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-card">
+          <div class="filter-title-group">
+            <h3>Filtrar Oportunidades</h3>
+            <p>Selecione a região ou tipo de imóvel desejado</p>
+          </div>
+          <div class="filter-buttons" id="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todos os Imóveis (4)</button>
+            <button class="filter-btn" data-filter="betim">Betim / MG</button>
+            <button class="filter-btn" data-filter="contagem">Contagem / MG</button>
+            <button class="filter-btn" data-filter="campos">Campos Gerais / MG</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Property Listings Section -->
+    <section class="listings-section" id="imoveis">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Catálogo Selecionado</p>
+          <h2 class="section-title">Imóveis em Destaque no Leilão</h2>
+          <p class="section-subtitle">
+            Toque na foto ou no botão para falar diretamente no WhatsApp (+55 11 96018-9568) e conferir documentação, edital e condições de pagamento.
+          </p>
+        </div>
+
+        <div class="property-grid">
+          <!-- Property 1: Betim Bandeirinhas -->
+          <article class="card" data-category="betim">
+            <div class="card-photo-wrap">
+              <a href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20casa%20em%20Betim%20(Bandeirinhas)%20por%20R%24%2085.600%2C00.%20Poderia%20me%20enviar%20os%20detalhes%3F" target="_blank" rel="noopener noreferrer" aria-label="Consultar casa em Betim">
+                <img src="./assets/casas-parque-amazonas/casa-rua-01.webp" alt="Casa contemporânea em Betim" loading="lazy">
+              </a>
+              <span class="badge-discount">60% de Desconto</span>
+              <span class="badge-tag-lot">LOTE #104</span>
+              <a class="photo-floating-wa" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20casa%20em%20Betim%20por%20R%24%2085.600%2C00." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp direto">
+                <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+              </a>
+            </div>
+            <div class="card-body">
+              <span class="card-location">📍 Betim · Minas Gerais</span>
+              <h3 class="card-title">Casa Contemporânea em Betim</h3>
+              <p class="card-address">Bairro Bandeirinhas · Rua residencial tranquila com infraestrutura completa.</p>
+              
+              <div class="card-specs">
+                <span>📐 140 m²</span>
+                <span>🛏️ 3 Quartos</span>
+                <span>🚗 2 Vagas</span>
+              </div>
+
+              <div class="card-price-block">
+                <div class="price-original">Avaliação: <s>R$ 214.000,00</s></div>
+                <div class="price-auction">R$ 85.600,00</div>
+                <div class="price-savings">Economia de R$ 128.400,00</div>
+              </div>
+
+              <div class="card-actions">
+                <a class="btn-card-wa" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20casa%20em%20Betim%20por%20R%24%2085.600%2C00.%20Poderia%20me%20enviar%20os%20detalhes%3F" target="_blank" rel="noopener noreferrer">
+                  <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+                  Consultar no WhatsApp
+                </a>
+                <button class="btn-card-detail" onclick="openPropertyModal('Casa Contemporânea em Betim', 'Bandeirinhas, Betim - MG', 'R$ 214.000,00', 'R$ 85.600,00', 'R$ 128.400,00', './assets/casas-parque-amazonas/casa-rua-01.webp', '140 m²', '3 Quartos (1 Suíte)', '2 Vagas', 'Aceita proposta à vista e parcelamento conforme edital. Documentação jurídica regularizada.')">
+                  Ver Ficha Completa
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 2: Betim Jardim Brasília -->
+          <article class="card" data-category="betim">
+            <div class="card-photo-wrap">
+              <a href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20casa%20em%20Jardim%20Bras%C3%ADlia%20(Betim)%20por%20R%24%2070.364%2C04." target="_blank" rel="noopener noreferrer" aria-label="Consultar casa em Jardim Brasília">
+                <img src="./assets/casas-parque-amazonas/casa-rua-02.webp" alt="Casa com área externa em Betim" loading="lazy">
+              </a>
+              <span class="badge-discount">60% de Desconto</span>
+              <span class="badge-tag-lot">LOTE #105</span>
+              <a class="photo-floating-wa" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20casa%20em%20Jardim%20Bras%C3%ADlia%20por%20R%24%2070.364%2C04." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp direto">
+                <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+              </a>
+            </div>
+            <div class="card-body">
+              <span class="card-location">📍 Betim · Minas Gerais</span>
+              <h3 class="card-title">Casa com Área Externa em Betim</h3>
+              <p class="card-address">Jardim Brasília · Fácil acesso a vias principais e comércio local.</p>
+              
+              <div class="card-specs">
+                <span>📐 110 m²</span>
+                <span>🛏️ 2 Quartos</span>
+                <span>🚗 1 Vaga</span>
+              </div>
+
+              <div class="card-price-block">
+                <div class="price-original">Avaliação: <s>R$ 175.910,09</s></div>
+                <div class="price-auction">R$ 70.364,04</div>
+                <div class="price-savings">Economia de R$ 105.546,05</div>
+              </div>
+
+              <div class="card-actions">
+                <a class="btn-card-wa" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20casa%20em%20Jardim%20Bras%C3%ADlia%20(Betim)%20por%20R%24%2070.364%2C04." target="_blank" rel="noopener noreferrer">
+                  <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+                  Consultar no WhatsApp
+                </a>
+                <button class="btn-card-detail" onclick="openPropertyModal('Casa com Área Externa em Betim', 'Jardim Brasília, Betim - MG', 'R$ 175.910,09', 'R$ 70.364,04', 'R$ 105.546,05', './assets/casas-parque-amazonas/casa-rua-02.webp', '110 m²', '2 Quartos', '1 Vaga', 'Imóvel residencial desocupado. Oportunidade excelente para morar ou locação imediata.')">
+                  Ver Ficha Completa
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 3: Campos Gerais -->
+          <article class="card" data-category="campos">
+            <div class="card-photo-wrap">
+              <a href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20casa%20em%20Campos%20Gerais%20por%20R%24%2058.800%2C00." target="_blank" rel="noopener noreferrer" aria-label="Consultar casa em Campos Gerais">
+                <img src="./assets/casas-parque-amazonas/casa-rua-03.webp" alt="Casa térrea em Campos Gerais" loading="lazy">
+              </a>
+              <span class="badge-discount">60% de Desconto</span>
+              <span class="badge-tag-lot">LOTE #106</span>
+              <a class="photo-floating-wa" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20casa%20em%20Campos%20Gerais%20por%20R%24%2058.800%2C00." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp direto">
+                <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+              </a>
+            </div>
+            <div class="card-body">
+              <span class="card-location">📍 Campos Gerais · Minas Gerais</span>
+              <h3 class="card-title">Casa Térrea em Campos Gerais</h3>
+              <p class="card-address">Centro · Perto de escolas, bancos e comércio da região central.</p>
+              
+              <div class="card-specs">
+                <span>📐 95 m²</span>
+                <span>🛏️ 2 Quartos</span>
+                <span>🚗 Quintal Amplo</span>
+              </div>
+
+              <div class="card-price-block">
+                <div class="price-original">Avaliação: <s>R$ 147.000,00</s></div>
+                <div class="price-auction">R$ 58.800,00</div>
+                <div class="price-savings">Economia de R$ 88.200,00</div>
+              </div>
+
+              <div class="card-actions">
+                <a class="btn-card-wa" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20casa%20em%20Campos%20Gerais%20por%20R%24%2058.800%2C00." target="_blank" rel="noopener noreferrer">
+                  <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+                  Consultar no WhatsApp
+                </a>
+                <button class="btn-card-detail" onclick="openPropertyModal('Casa Térrea em Campos Gerais', 'Centro, Campos Gerais - MG', 'R$ 147.000,00', 'R$ 58.800,00', 'R$ 88.200,00', './assets/casas-parque-amazonas/casa-rua-03.webp', '95 m²', '2 Quartos', 'Quintal', 'Preço mais acessível do leilão atual. Potencial alto de valorização na região central.')">
+                  Ver Ficha Completa
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 4: Contagem -->
+          <article class="card" data-category="contagem">
+            <div class="card-photo-wrap">
+              <a href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20im%C3%B3vel%20em%20Contagem%20por%20R%24%20128.220%2C42." target="_blank" rel="noopener noreferrer" aria-label="Consultar imóvel em Contagem">
+                <img src="./assets/casas-parque-amazonas/casa-rua-04.webp" alt="Residência moderna em Contagem" loading="lazy">
+              </a>
+              <span class="badge-discount">60% de Desconto</span>
+              <span class="badge-tag-lot">LOTE #107</span>
+              <a class="photo-floating-wa" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20im%C3%B3vel%20em%20Contagem%20por%20R%24%20128.220%2C42." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp direto">
+                <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+              </a>
+            </div>
+            <div class="card-body">
+              <span class="card-location">📍 Contagem · Minas Gerais</span>
+              <h3 class="card-title">Residência Moderna em Contagem</h3>
+              <p class="card-address">Parque Riacho das Pedras · Excelente localização com alto índice de valorização.</p>
+              
+              <div class="card-specs">
+                <span>📐 185 m²</span>
+                <span>🛏️ 3 Quartos (2 Suítes)</span>
+                <span>🚗 2 Vagas</span>
+              </div>
+
+              <div class="card-price-block">
+                <div class="price-original">Avaliação: <s>R$ 320.551,06</s></div>
+                <div class="price-auction">R$ 128.220,42</div>
+                <div class="price-savings">Economia de R$ 192.330,64</div>
+              </div>
+
+              <div class="card-actions">
+                <a class="btn-card-wa" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20im%C3%B3vel%20em%20Contagem%20por%20R%24%20128.220%2C42." target="_blank" rel="noopener noreferrer">
+                  <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+                  Consultar no WhatsApp
+                </a>
+                <button class="btn-card-detail" onclick="openPropertyModal('Residência Moderna em Contagem', 'Parque Riacho das Pedras, Contagem - MG', 'R$ 320.551,06', 'R$ 128.220,42', 'R$ 192.330,64', './assets/casas-parque-amazonas/casa-rua-04.webp', '185 m²', '3 Quartos (2 Suítes)', '2 Vagas', 'Padrão construtivo superior, fino acabamento, garagem coberta e documentação apta para transferência.')">
+                  Ver Ficha Completa
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="legal-notice">
+          <strong>Aviso de Transparência & Dados Oficiais:</strong> Fotos de referência de casas do Setor Parque Amazonas, Goiânia (GO), enviadas pelo cliente; não necessariamente correspondem de forma idêntica aos imóveis anunciados. Preços e descontos exibidos são oportunidades com base em editais e devem ser confirmados diretamente com o plantão pelo WhatsApp. Consulte sempre a disponibilidade e a certidão de inteiro teor antes de qualquer decisão.
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator & ROI Simulator -->
+    <section class="calculator-section" id="simulador">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Simulador Financeiro</p>
+          <h2 class="section-title">Calcule sua Economia na Arrematação</h2>
+          <p class="section-subtitle">Descubra quanto você economiza arrematando pelo valor de leilão comparado ao preço de avaliação comercial.</p>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-inputs">
+            <div class="calc-group">
+              <label for="eval-range">Valor de Avaliação do Imóvel (R$):</label>
+              <div class="calc-range-wrap">
+                <input type="range" id="eval-range" min="80000" max="600000" step="10000" value="200000">
+                <span class="calc-range-val" id="eval-display">R$ 200.000</span>
+              </div>
+            </div>
+
+            <div class="calc-group">
+              <label for="discount-range">Desconto Estimado do Leilão (%):</label>
+              <div class="calc-range-wrap">
+                <input type="range" id="discount-range" min="30" max="65" step="5" value="60">
+                <span class="calc-range-val" id="discount-display">60%</span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--slate-600); line-height: 1.6;">
+              💡 Arrematações de 2ª praça frequentemente atingem entre 50% e 60% de deságio. Faça uma consulta formal para simular parcelamento em até 30 meses.
+            </p>
+          </div>
+
+          <div class="calc-results">
+            <div class="calc-result-row">
+              <span>Valor de Mercado:</span>
+              <strong id="res-market">R$ 200.000,00</strong>
+            </div>
+            <div class="calc-result-row">
+              <span>Valor de Arrematação:</span>
+              <strong id="res-auction" style="color: #38bdf8;">R$ 80.000,00</strong>
+            </div>
+            <div class="calc-result-row highlight">
+              <span>Sua Economia Direta:</span>
+              <strong class="val" id="res-savings">R$ 120.000,00</strong>
+            </div>
+
+            <a class="btn-calc-wa" id="calc-wa-btn" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20fiz%20uma%20simula%C3%A7%C3%A3o%20de%20im%C3%B3vel%20de%20R%24%20200.000%2C00%20com%2060%25%20de%20desconto%20e%20gostaria%20de%20analisar%20lotes%20dispon%C3%ADveis." target="_blank" rel="noopener noreferrer">
+              <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+              Solicitar Estudo no WhatsApp (+55 11 96018-9568)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="steps-section" id="como-funciona">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Segurança & Passo a Passo</p>
+          <h2 class="section-title">Como Funciona a Arrematação</h2>
+          <p class="section-subtitle">Do primeiro contato até a posse das chaves com respaldo jurídico completo.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <h3>Escolha do Lote</h3>
+            <p>Selecione o imóvel desejado em nosso catálogo ou solicite um levantamento personalizado para sua cidade.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <h3>Análise Jurídica</h3>
+            <p>Nossa equipe jurídica analisa certidões, matrícula, débitos de IPTU e condomínio para garantir arrematação 100% segura.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <h3>Habilitação & Lance</h3>
+            <p>Auxiliamos no cadastro oficial e na estratégia de lance com o melhor custo-benefício e condições de pagamento.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">04</div>
+            <h3>Registro & Posse</h3>
+            <p>Acompanhamento integral da emissão da carta de arrematação, registro no Cartório de Imóveis e entrega das chaves.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="sobre">
+      <div class="container">
+        <div class="about-card">
+          <div class="about-text">
+            <p class="section-eyebrow">Sobre Nossa Equipe</p>
+            <h2>Uma busca mais simples começa com uma boa conversa.</h2>
+            <p>
+              Somos especialistas dedicados a aproximar pessoas e investidores das melhores oportunidades no mercado de leilões imobiliários judiciais e extrajudiciais.
+            </p>
+            <p>
+              Nosso propósito é desmistificar o leilão, oferecendo transparência em cada documento, atendimento próximo e informações claras. Valorizamos o respeito, o rigor técnico e o acompanhamento humanizado, porque a confiança de quem nos procura é nosso maior patrimônio.
+            </p>
+            <a class="btn-primary" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20mais%20sobre%20a%20assessoria%20do%20Leil%C3%A3o%20Im%C3%B3veis." target="_blank" rel="noopener noreferrer">
+              <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+              Fale Conosco: +55 (11) 96018-9568
+            </a>
+          </div>
+
+          <div class="about-badge-card">
+            <img class="about-badge-avatar" src="./perfil-leilao.png" alt="Perfil Leilão Imóveis" width="96" height="96">
+            <h3>Leilão Imóveis Oficial</h3>
+            <span class="tag">Atendimento e Plantão São Paulo & Nacional</span>
+            <span class="phone">+55 11 96018-9568</span>
+            <p style="font-size: 0.82rem; color: #94a3b8; line-height: 1.6;">
+              Horário de atendimento: Segunda a Sábado das 08:00 às 20:00. Respostas rápidas pelo WhatsApp.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Tire suas Dúvidas</p>
+          <h2 class="section-title">Perguntas Frequentes sobre Leilões</h2>
+          <p class="section-subtitle">Entenda os principais pontos sobre arrematação, débitos e segurança jurídica.</p>
+        </div>
+
+        <div class="faq-grid">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>Qualquer pessoa física pode arrematar um imóvel em leilão?</span>
+            </summary>
+            <div class="faq-answer">
+              Sim! Qualquer pessoa maior de 18 anos ou emancipada, em situação regular com o CPF, pode participar e arrematar imóveis. Nossa equipe orienta toda a documentação necessária.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>O que acontece com as dívidas antigas de IPTU e condomínio?</span>
+            </summary>
+            <div class="faq-answer">
+              Na maioria dos leilões judiciais, as dívidas anteriores de IPTU sub-rogam no preço da arrematação (são pagas com o valor arrecadado no leilão). Nossa assessoria jurídica analisa minuciosamente cada edital antes do lance para assegurar que você receba o imóvel limpo de ônus.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>É possível parcelar ou financiar imóveis de leilão?</span>
+            </summary>
+            <div class="faq-answer">
+              Sim! O Código de Processo Civil (art. 895) prevê a possibilidade de proposta com 25% de entrada e o restante em até 30 parcelas mensais corrigidas. Em leilões extrajudiciais da Caixa, é comum aceitar financiamento imobiliário e saque do FGTS.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Como é feita a desocupação do imóvel caso esteja ocupado?</span>
+            </summary>
+            <div class="faq-answer">
+              Nos leilões judiciais, o próprio juiz do processo expede o Mandado de Imissão na Posse diretamente em favor do arrematante. Em leilões extrajudiciais, há rito sumário de desocupação com suporte do nosso departamento jurídico.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img class="avatar" src="./perfil-leilao.png" alt="Perfil Leilão Imóveis" width="44" height="44">
+          <img src="./Logo.png" alt="Leilão Imóveis" style="height: 38px; width: auto;">
+        </div>
+        <div>
+          <a class="footer-wa-btn" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20quero%20atendimento%20pelo%20WhatsApp." target="_blank" rel="noopener noreferrer">
+            <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+            Plantão WhatsApp: +55 (11) 96018-9568
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Leilão Imóveis · Todos os direitos reservados. Portal de Oportunidades & Arrematações.</p>
+        <p>Atendimento Central: WhatsApp +55 11 96018-9568</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a class="floating-wa-btn" href="https://wa.me/5511960189568?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20especialista%20em%20leil%C3%A3o%20de%20im%C3%B3veis." target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp para tirar dúvidas">
+    <img class="floating-wa-avatar" src="./perfil-leilao.png" alt="Perfil Leilão Imóveis" width="38" height="38">
+    <span>Falar no WhatsApp: (11) 96018-9568</span>
+  </a>
+
+  <!-- Property Detail Modal -->
+  <div class="modal-overlay" id="property-modal" onclick="closeModalOnOverlay(event)">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closePropertyModal()" aria-label="Fechar janela">&times;</button>
+      <img class="modal-photo" id="modal-img" src="" alt="Foto do imóvel">
+      <div class="modal-body">
+        <div class="modal-tags">
+          <span class="badge-discount" style="position:static;">60% de Desconto</span>
+          <span class="badge-tag-lot" style="position:static; background:#0f172a; color:#38bdf8;">Lote Verificado</span>
+        </div>
+        <h3 class="modal-title" id="modal-title">Título do Imóvel</h3>
+        <p class="modal-address" id="modal-address">Endereço do imóvel</p>
+
+        <div class="modal-price-box">
+          <div>
+            <div style="font-size:0.75rem; color:var(--slate-600);" id="modal-eval">Avaliação: <s>R$ 0,00</s></div>
+            <div style="font-size:1.5rem; font-weight:900; color:var(--primary-dark);" id="modal-auction">R$ 0,00</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-size:0.72rem; color:var(--slate-600);">Sua economia:</div>
+            <div style="font-size:1rem; font-weight:800; color:#15803d;" id="modal-savings">R$ 0,00</div>
+          </div>
+        </div>
+
+        <div class="modal-specs-list">
+          <div class="modal-spec-item" id="modal-area">120 m²</div>
+          <div class="modal-spec-item" id="modal-rooms">3 Quartos</div>
+          <div class="modal-spec-item" id="modal-parking">2 Vagas</div>
+        </div>
+
+        <p id="modal-desc" style="font-size:0.86rem; color:var(--slate-600); line-height:1.6; margin-bottom:20px;">
+          Descrição e detalhes da documentação.
+        </p>
+
+        <a class="modal-wa-cta" id="modal-wa-link" href="#" target="_blank" rel="noopener noreferrer">
+          <svg class="whatsapp-icon-svg" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.4 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.4.8 1.2 1.6 2 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .3-.1.8-.5 1.1-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.1-.5-2.1-1.3-3-2.2-.8-.9-1.3-1.8-1.5-2.5-.2-.7-.1-1.4.3-2Z" fill="currentColor"/></svg>
+          Quero Mais Informações pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // WhatsApp default number
+    const WA_NUMBER = '5511960189568';
+
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.property-grid .card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+
+        cards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // ROI Simulator Logic
+    const evalRange = document.getElementById('eval-range');
+    const discountRange = document.getElementById('discount-range');
+    const evalDisplay = document.getElementById('eval-display');
+    const discountDisplay = document.getElementById('discount-display');
+    const resMarket = document.getElementById('res-market');
+    const resAuction = document.getElementById('res-auction');
+    const resSavings = document.getElementById('res-savings');
+    const calcWaBtn = document.getElementById('calc-wa-btn');
+
+    function formatBRL(val) {
+      return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+
+    function updateCalculator() {
+      const evalVal = parseFloat(evalRange.value);
+      const discountVal = parseFloat(discountRange.value);
+
+      evalDisplay.textContent = formatBRL(evalVal).replace(',00', '');
+      discountDisplay.textContent = discountVal + '%';
+
+      const auctionVal = evalVal * (1 - (discountVal / 100));
+      const savingsVal = evalVal - auctionVal;
+
+      resMarket.textContent = formatBRL(evalVal);
+      resAuction.textContent = formatBRL(auctionVal);
+      resSavings.textContent = formatBRL(savingsVal);
+
+      const msg = `Olá, fiz uma simulação de imóvel no valor de ${formatBRL(evalVal)} com ${discountVal}% de desconto (arrematação por ${formatBRL(auctionVal)} e economia de ${formatBRL(savingsVal)}). Gostaria de ver opções disponíveis.`;
+      calcWaBtn.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+    }
+
+    evalRange.addEventListener('input', updateCalculator);
+    discountRange.addEventListener('input', updateCalculator);
+
+    // Modal Logic
+    const modal = document.getElementById('property-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+    const modalAddress = document.getElementById('modal-address');
+    const modalEval = document.getElementById('modal-eval');
+    const modalAuction = document.getElementById('modal-auction');
+    const modalSavings = document.getElementById('modal-savings');
+    const modalArea = document.getElementById('modal-area');
+    const modalRooms = document.getElementById('modal-rooms');
+    const modalParking = document.getElementById('modal-parking');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalWaLink = document.getElementById('modal-wa-link');
+
+    function openPropertyModal(title, address, evalPrice, auctionPrice, savings, imgSrc, area, rooms, parking, desc) {
+      modalImg.src = imgSrc;
+      modalTitle.textContent = title;
+      modalAddress.textContent = address;
+      modalEval.innerHTML = `Avaliação: <s>${evalPrice}</s>`;
+      modalAuction.textContent = auctionPrice;
+      modalSavings.textContent = savings;
+      modalArea.textContent = area;
+      modalRooms.textContent = rooms;
+      modalParking.textContent = parking;
+      modalDesc.textContent = desc;
+
+      const waMsg = `Olá, tenho interesse na ${title} (${address}) por ${auctionPrice}. Gostaria de mais informações e edital.`;
+      modalWaLink.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waMsg)}`;
+
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closePropertyModal() {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeModalOnOverlay(e) {
+      if (e.target === modal) {
+        closePropertyModal();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('open')) {
+        closePropertyModal();
+      }
+    });
+  </script>
+</body>
+</html>
